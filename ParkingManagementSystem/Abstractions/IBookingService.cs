@@ -8,6 +8,6 @@ namespace ParkingManagementSystem.Abstractions
 {
     internal interface IBookingService
     {
-        public Task<string> BookParkingAsync(string plateNumber, string siteId, DateTime from, DateTime to, string cardNumber);
+        public Task<string> BookParkingAsync(string plateNumber, Guid siteId, DateTime from, DateTime to, string cardNumber);
     }
 }
